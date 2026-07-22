@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Priyanka Haridas - Resume</title>
+<style>
+  /* STRICT PAGE MARGIN SETUP (SUPPRESS HEADERS & FOOTERS) */
+  @page { 
+    size: letter portrait; 
+    margin: 0; 
+  }
+
+  body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #334155; 
+    line-height: 1.3; 
+    margin: 0; 
+    padding: 20px; 
+    background-color: #F8FAFC; 
+  }
+  
+  .container { 
+    max-width: 850px; 
+    margin: 0 auto; 
+    background: #FFFFFF; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+  }
+
+  /* ACTION BUTTONS (Hidden when printing) */
+  .action-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+  .pdf-btn {
+    background-color: #0D9488;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .pdf-btn:hover {
+    background-color: #0F766E;
+  }
+
+  /* HEADER BANNER */
+  .header-banner {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+  }
+  .header-banner h1 { font-size: 20pt; margin: 0 0 4px 0; letter-spacing: 0.5px; color: #FFFFFF; }
+  .header-banner .title { font-size: 10.5pt; font-weight: bold; color: #2DD4BF; margin-bottom: 4px; }
+  .header-banner .subtitle { font-size: 8.5pt; color: #94A3B8; margin-bottom: 6px; }
+  .header-banner .contact { font-size: 8.5pt; color: #CBD5E1; }
+  .header-banner .contact a { color: #2DD4BF; text-decoration: none; }
+  .header-banner .contact a:hover { text-decoration: underline; }
+
+  /* CARDS & CONTAINERS */
+  .card { background-color: #F0FDFA; border: 1px solid #CCFBF1; padding: 10px 12px; margin-bottom: 10px; border-radius: 6px; }
+  .card-white { background-color: #FFFFFF; border: 1px solid #E2E8F0; padding: 10px 12px; margin-bottom: 10px; border-radius: 6px; }
+  
+  h2 { font-size: 9.5pt; text-transform: uppercase; color: #0F766E; border-bottom: 2px solid #0D9488; padding-bottom: 3px; margin-top: 0; margin-bottom: 8px; letter-spacing: 0.5px; }
+  
+  /* EXPERIENCE LIST */
+  .job { margin-bottom: 10px; }
+  .job-header { font-weight: bold; font-size: 9pt; color: #0F172A; }
+  .company { color: #0D9488; font-weight: bold; }
+  .date { font-size: 8pt; color: #64748B; font-weight: normal; }
+  .job-role { font-style: italic; font-size: 8pt; color: #64748B; margin-bottom: 3px; }
+  
+  ul { margin: 0; padding-left: 15px; }
+  li { font-size: 8pt; margin-bottom: 2.5px; color: #334155; }
+  
+  /* TWO COLUMN TABLE LAYOUT */
+  table.layout { width: 100%; border-collapse: collapse; }
+  table.layout td { vertical-align: top; padding: 0; border: none; }
+
+  /* PRINT / PDF EXPORT SPECIFIC MARGIN CONTROL */
+  @media print {
+    body { 
+      background-color: #FFFFFF; 
+      padding: 0.35in 0.4in; /* Custom page margins (top/bottom, left/right) */
+    }
+    .container { max-width: 100%; padding: 0; box-shadow: none; }
+    .action-bar { display: none !important; }
+    .header-banner, .card, .card-white { 
+      -webkit-print-color-adjust: exact; 
+      print-color-adjust: exact; 
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- EXPORT PDF BUTTON -->
+    <div class="action-bar">
+      <button class="pdf-btn" onclick="window.print()">
+        📄 Export as PDF
+      </button>
+    </div>
+
+    <!-- HEADER BANNER -->
+    <div class="header-banner">
+      <h1>PRIYANKA HARIDAS</h1>
+      <div class="title">Project & Operations Management Generalist | Business Operations Manager</div>
+      <div class="subtitle">Google Analytics 4 Certified | JLPT N5 Certified | Operational Process Improvement | Delivery Governance</div>
+      <div class="contact">
+        📧 <a href="mailto:phpkharidas@gmail.com">phpkharidas@gmail.com</a> | 
+        📞 +91 9599767885 | 
+        🔗 <a href="https://www.linkedin.com/in/priyanka-haridas-735043110/" target="_blank">linkedin.com/in/priyanka-haridas-735043110/</a>
+      </div>
+    </div>
+
+    <table class="layout">
+      <tr>
+        <!-- LEFT COLUMN -->
+        <td style="width: 32%; padding-right: 12px;">
+          
+          <div class="card">
+            <h2>Tools & Technologies</h2>
+            <strong style="font-size: 8pt;">Business Ops & Finance</strong>
+            <ul><li>Wise, Billit, ClearFacts, Tally, SignRequest</li></ul>
+            
+            <strong style="font-size: 8pt;">Data & Analytics</strong>
+            <ul><li>Power BI, Excel, Google Workspace, MS 365</li></ul>
+            
+            <strong style="font-size: 8pt;">Project & Workflow</strong>
+            <ul><li>Notion, Jira, Asana, Toggl, Pipedrive</li></ul>
+            
+            <strong style="font-size: 8pt;">Communication</strong>
+            <ul><li>Slack, MS Teams, Loom, Zoom</li></ul>
+
+            <strong style="font-size: 8pt;">Localization & QA</strong>
+            <ul><li>Crowdin, Protemos, HP ALM, Mantis, Buganizer</li></ul>
+
+            <strong style="font-size: 8pt;">Design & AI</strong>
+            <ul><li>Adobe InDesign, Photoshop, Canva, ChatGPT, Claude, Prompt Eng.</li></ul>
+          </div>
+
+          <div class="card">
+            <h2>Certifications</h2>
+            <div style="font-size: 8pt; margin-bottom: 3px;">🏅 <strong>Google Analytics 4 Certified</strong></div>
+            <div style="font-size: 8pt;">🏅 <strong>JLPT N5 Certified</strong> (Japanese)</div>
+          </div>
+
+          <div class="card">
+            <h2>Education</h2>
+            <div style="font-size: 8pt; margin-bottom: 5px;">
+              <strong>M.Sc. (Info Systems & AI)</strong><br>
+              <span style="font-size: 7.5pt; color: #64748B;">BITS Pilani | 7.7 CGPA (2023–25)</span>
+            </div>
+            <div style="font-size: 8pt;">
+              <strong>B.Sc. (Information Tech)</strong><br>
+              <span style="font-size: 7.5pt; color: #64748B;">Manav Rachna | 9.0 CGPA (2015–18)</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Languages</h2>
+            <div style="font-size: 7.5pt; line-height: 1.3;">
+              • <strong>Native (C2):</strong> Hindi, English, Malayalam<br>
+              • <strong>Proficient (B2):</strong> Bengali, Gujarati, Marathi<br>
+              • <strong>Limited Working:</strong> Japanese (N5)
+            </div>
+          </div>
+
+        </td>
+
+        <!-- RIGHT COLUMN -->
+        <td style="width: 68%;">
+          
+          <div class="card-white" style="border-left: 4px solid #0D9488;">
+            <h2>Profile & Career Objective</h2>
+            <p style="font-size: 8pt; margin: 0;">
+              Project and Operations Management Generalist with 8+ years of experience supporting and optimizing fast-paced, high-volume, cross-functional environments across agency, localization, and enterprise operations. Experienced in business operations, operational process improvement, delivery governance, financial and administrative coordination, and distributed workforce management. Skilled at building scalable workflows, improving operational visibility, streamlining systems, and solving complex operational problems in ambiguous environments.
+            </p>
+          </div>
+
+          <div class="card-white">
+            <h2>Professional Experience</h2>
+
+            <div class="job">
+              <div class="job-header"><span class="company">Entre les lignes Agency (ELL)</span> | Business Operations Manager <span class="date">(Feb 2026 – Present)</span></div>
+              <div class="job-role">Operations & Workflow Lead</div>
+              <ul>
+                <li>Manage end-to-end business operations across administrative, financial, payroll, vendor, and operational coordination functions within a global agency environment.</li>
+                <li>Support cross-functional operational alignment across management, project operations, administration, finance, and client-facing functions.</li>
+                <li>Prepare and maintain monthly and quarterly business reports, operational tracking, and internal reporting documentation for leadership decision-making.</li>
+                <li>Identify operational inefficiencies, eliminate redundant workflows, and improve clarity across legacy operational processes and policies.</li>
+                <li>Lead the redesign of the company holiday framework to support a globally distributed workforce rather than region-specific legacy operations.</li>
+                <li>Build operational planning and workflow systems using Notion, including ongoing development of an AI-assisted capacity planning and holiday risk management framework.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header"><span class="company">Acclaro</span> | Lead <span class="date">(Sep 2023 – Present)</span></div>
+              <div class="job-role">Localization QA & Operations</div>
+              <ul>
+                <li>Monitor live multilingual projects and resolve operational and delivery issues to maintain workflow continuity.</li>
+                <li>Lead and mentor teams, delivering structured QA feedback, enforcing guidelines, and improving overall quality outcomes.</li>
+                <li>Perform manual testing of localized website and app content, identifying UI, content, tagging, and functional issues across languages.</li>
+                <li>Author and maintain clear QA documentation, contributor guidelines, and process notes to improve efficiency.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header"><span class="company">Productive Playhouse</span> | Team Lead <span class="date">(Sep 2023 – Nov 2024)</span></div>
+              <div class="job-role">Operations & Quality Control</div>
+              <ul>
+                <li>Progressed from Associate to QC to Team Lead based on performance, quality, and reliability.</li>
+                <li>Coordinated project workflows, timelines, and quality benchmarks across high-volume workstreams.</li>
+                <li>Managed resource allocation, task prioritization, and delivery tracking.</li>
+                <li>Built and maintained KPI trackers and dashboards to monitor quality, productivity, and turnaround time.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header"><span class="company">HnD Translations</span> | Localization Operations & Program Management <span class="date">(Jan 2021 – Jan 2024)</span></div>
+              <div class="job-role">Operations & Program Management</div>
+              <ul>
+                <li>Managed end-to-end delivery of large-scale localization, transcription, and annotation projects across multiple languages.</li>
+                <li>Led operations for contributor pools exceeding 1,500 people, including staffing, onboarding, scaling, and performance management.</li>
+                <li>Owned full project lifecycle: resourcing, training, workflows, delivery tracking, and client communication.</li>
+                <li>Handled operational administration including PO issuance, payments, timesheets, vendor coordination, and license tracking.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header"><span class="company">Deloitte USI</span> | Analyst <span class="date">(Aug 2018 – Dec 2020)</span></div>
+              <div class="job-role">Data Migration & Systems Analyst</div>
+              <ul>
+                <li>Supported enterprise data migration projects using SAP BODS, handling data transformation, validation, and reconciliation.</li>
+                <li>Coordinated with technical and business stakeholders to resolve defects and ensure data integrity post-migration.</li>
+                <li>Executed technical, functional, and integration testing aligned with business requirements.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
